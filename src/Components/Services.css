@@ -10,6 +10,7 @@
     color: white;
     padding: 15px;
    border-radius: 50%;
+   cursor: pointer;
 }
 
 .btn_prevserv{
@@ -20,6 +21,7 @@
    color: white;
    padding: 15px;
    border-radius: 50%;
+   cursor: pointer;
 }
 
 .btn_prevserv:hover{
@@ -33,6 +35,17 @@
 .EaringsSlide_div{
     width: 100%;
     overflow: hidden;
+}
+
+.braceletsSlide_div{
+    margin-top: 10px;
+}
+
+.NecklacesSlide_div{
+    margin-top: 10px;
+}
+.RingsSlide_div{
+    margin-top: 10px;
 }
 
 @media(max-width:767px){

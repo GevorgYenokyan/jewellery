@@ -1,10 +1,10 @@
 import React,{useState,useRef,useEffect} from "react"
 import { AiOutlineArrowRight,AiOutlineArrowLeft} from 'react-icons/ai';
-import './EaringsSlide.css'
+import './RingsSlide.css'
 
 
 
-function EaringsSlide() {
+function RingsSlide() {
 
     
  const useContener = useRef()
@@ -13,7 +13,7 @@ function EaringsSlide() {
  const [i , setI] = useState(0)
  const [bull, setBull] =useState(true)
 
- const arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21]
+ const arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]
  
 
 useEffect(()=>{
@@ -69,7 +69,7 @@ const slider =()=>{
                   return  <ul  className="slide_img_cont" key={i}>
                              <li className="slid_list">
                                  <p className="text">ականջող</p>
-                                 <img className="img" width={width} src={`./img/earings/earings${el}.jpg`} alt=""/>
+                                 <img className="img" width={width} src={`./img/rings/rings${el}.jpg`} alt=""/>
                                  <p className="text">գինը կախված է ձեր պատվերից</p>
                               </li>
                           </ul>
@@ -82,4 +82,4 @@ const slider =()=>{
             </div>)
 }
 
-export default EaringsSlide
+export default RingsSlide
