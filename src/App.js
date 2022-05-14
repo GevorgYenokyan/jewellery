@@ -10,9 +10,8 @@ function App() {
       <Nav/>
         <Routes>
           <Route  path={"/"} element={<Servises/>}/>
-        </Routes>
-      
-    </div>
+        </Routes>     
+   </div>
   );
 }
 

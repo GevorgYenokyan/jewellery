@@ -45,8 +45,7 @@ useEffect(() => {
          ԿԱՊ
          </Link>
        </ul>
-       
-        
+                    
     </div>)
 }
 

@@ -1,12 +1,12 @@
-import React,{useState,useRef,useEffect} from "react"
+import {useState,useRef,useEffect} from "react"
 import { AiOutlineArrowRight,AiOutlineArrowLeft} from 'react-icons/ai';
-import './BraceletsSlide.css'
+import { Link } from "react-router-dom";
+
 
 
 
 function BraceletsSlide() {
-
-    
+   
  const useContener = useRef()
  const useSlide = useRef()
  const [width, setWidth] =useState(null)
@@ -68,9 +68,10 @@ const slider =()=>{
                   {arr.map((el,i)=>{
                   return  <ul  className="slide_img_cont" key={i}>
                              <li className="slid_list">
-                                 <p className="text">ականջող</p>
+                                 <p className="text">թևնոց</p>
                                  <img className="img" width={width} src={`./img/bracelets/bracelets${el}.jpg`} alt=""/>
                                  <p className="text">գինը կախված է ձեր պատվերից</p>
+                                 <Link className="img_slide_link" to={"/"}>իմանալ ավելին</Link>
                               </li>
                           </ul>
                                      })

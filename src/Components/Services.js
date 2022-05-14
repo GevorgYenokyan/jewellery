@@ -7,6 +7,8 @@ import { AiOutlineArrowRight,AiOutlineArrowLeft} from 'react-icons/ai';
 import BraceletsSlide from './Services/BraceletsSlide'
 import NecklacesSlide from './Services/NecklacesSlide'
 import RingsSlide  from './Services/RingsSlide'
+import Jewells from "./Jewells/Jewells";
+import Video from "./Video/Video";
 import './Services.css'
 
 function Servises() {
@@ -58,8 +60,12 @@ const slide = slideArr.filter((el,ind)=>{
                 <AiOutlineArrowRight className={"btn_nextserv"} onClick={next}/>
                 <AiOutlineArrowLeft className={"btn_prevserv"} onClick={prev}/>
             </div>
+            <div>
+                <Video/>
+            </div>
             <div className="EaringsSlide_div">
                  <EaringsSlide/>
+            </div>
                  <div className="braceletsSlide_div">
                      <BraceletsSlide/>
                 </div>
@@ -69,7 +75,9 @@ const slide = slideArr.filter((el,ind)=>{
                 <div className="RingsSlide_div">
                      <RingsSlide/>
                 </div>
-            </div>
+                <div>
+                   <Jewells/>
+               </div>
         </div>
     )
 }

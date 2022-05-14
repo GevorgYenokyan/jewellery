@@ -1,6 +1,6 @@
 import React,{useState,useRef,useEffect} from "react"
 import { AiOutlineArrowRight,AiOutlineArrowLeft} from 'react-icons/ai';
-import './RingsSlide.css'
+
 
 
 
@@ -68,7 +68,7 @@ const slider =()=>{
                   {arr.map((el,i)=>{
                   return  <ul  className="slide_img_cont" key={i}>
                              <li className="slid_list">
-                                 <p className="text">ականջող</p>
+                                 <p className="text">մատանի</p>
                                  <img className="img" width={width} src={`./img/rings/rings${el}.jpg`} alt=""/>
                                  <p className="text">գինը կախված է ձեր պատվերից</p>
                               </li>
